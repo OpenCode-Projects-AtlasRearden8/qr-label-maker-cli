@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qr-label-maker"
+version = "1.0.0"
+description = "Offline CLI that turns text or URLs into print-and-cut QR label sheets (PDF/HTML) with a numbered legend"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Asdale Dynamics, LLC" }]
+keywords = ["qr", "labels", "print", "pdf", "offline", "garage-sale", "tool-bin"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Printing",
+  "Topic :: Utilities",
+]
+dependencies = []
+
+[project.scripts]
+qrlabel = "qrlabel.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["qrlabel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "created": "2026-10-29T00:00:00Z",
+  "registry": "qr-label-maker",
+  "entries": [
+    {
+      "id": "aa11bb",
+      "text": "https://example.com/garage-sale",
+      "created": "2026-10-29T00:00:00Z"
+    },
+    {
+      "id": "cc22dd",
+      "text": "Tool bin 7 - screws and nails",
+      "created": "2026-10-29T00:00:00Z"
+    }
+  ]
+}
